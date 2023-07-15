@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <title>Newspaper</title>
+          <style>
+               .body {
+                    position: relative;
+                    height: 1600px;
+                    width: 1000px; 
+                    border-left: solid black 10px;
+               }
+               .NP {
+                    position: relative;
+                    height: 1500px;
+                    width: 950px;
+                    left: 50px;
+               }
+               .index {
+                    position: relative;
+                    height: 100px;
+                    width: 950px;  
+                    background-color: aliceblue;                 
+               }
+               .topic {
+                    position: absolute;
+                    right: 190px;
+                    top: 75px;
+               }
+               .day {
+                    position: absolute;
+                    right: 95px;
+                    top: 75px;
+               }
+               .date {
+                    position: absolute;
+                    right: 5px;
+                    top: 75px;
+               }
+               
+               .header {
+                    position: absolute;
+                    display: grid;
+                    grid-template-columns: 325px 325px 275px;
+                    top: 100px;
+                    height:150px;
+                    width: 900px;
+                    background-color: rgb(246, 141, 5);
+               }
+               .hleft {
+                    position: absolute;
+                    height: 150px;
+                    width: 325px;
+                    background-color: rgb(185, 50, 99);
+                    z-index: 1;
+               }
+                    .hleftc {
+                         color: white;
+                         position: absolute;
+                         font-size: 70px;
+                         margin: 10px;
+                         top: 30px;
+                         left: 100px;
+                    }
+               .hcenter {
+                    position: absolute;
+                    height: 150px;
+                    width: 325px;
+                    background-color: white;
+                    left: 325px;
+               }
+               .hcenterc {
+                    color: rgb(185, 50, 99);
+                    position: absolute;
+                    font-size: 70px;
+                    top: 30px;
+                    margin: 10px;
+               }
+               .hright {
+                    position: absolute;
+                    height: 150px;
+                    width: 300px;
+                    background-color: rgb(126, 197, 197);
+                    right: -50px
+               }
+
+               .hrightc {
+                    position: absolute;
+                    font-weight: 900;
+                    font-size: 18px;
+                    margin: 10px;
+                    top: 10px;
+                    right: 30px;
+               }
+               .h {
+                    position: absolute;
+                    height: 50px;
+                    width: 950px;
+                    top: 150px;
+                    border-bottom: solid 15px rgb(185, 50, 99);
+               }
+               .slogan {
+                    position: absolute;
+                    font-size: 24px;
+                    color: rgb(185, 50, 99);
+                    left: 325px;
+                    top: 10px;
+               }
+               .content1 {
+                    display: grid;
+                    grid-template-columns: 500px 500px;
+                    position: relative;
+                    height: 500px;
+                    width: 1000px;
+                    top: 225px;
+
+                    gap: 10px;
+               }
+               
+               .cn1 {
+                    position: relative;
+                    display: grid;
+                    grid-template-rows: 80px 145px 245px;
+                    grid-template-columns: 240px 240px;
+                    height: 490px;
+                    width: 480px;
+                    gap: 5px;
+                    background-color: white
+               }
+               .title1 {
+                    grid-column: span 2;
+                    height:80px;
+                    border-bottom: 5px solid black;
+               }
+               .t1p1 {
+                    position: absolute;
+                    top: 110px;
+                    margin: 5px;
+                    width:220px;
+               }
+               .t1p2 {
+                    position: absolute;
+                    bottom: 10px;
+                    margin: 5px;
+                    width:220px;
+               }
+               .t1p3 {
+                    position: absolute;
+                    height: 490px;
+                    width: 220px;
+                    right: 5px;
+                    top: 110px;
+                    
+                    margin: 5px;
+                    font-size: 17px;
+               }
+               .pic1 {
+                    position: relative;
+                    height: 490px;
+                    width: 425px;
+                    top: 5px;
+                    right: -15px;
+               }
+               .border1 {
+                    position: absolute;
+                    top: 5px;
+                    left: 525px;
+                    width: 425px;
+                    border-top: 30px solid rgba(252, 128, 12, 0.555);
+               }
+               .border2 {
+                    position: absolute;
+                    top: 450px;
+                    left: 525px;
+                    height: 60px;
+                    width: 425px;
+                    background-color:  rgba(200, 117, 40, 0.942); 
+               }
+               .bc1 {
+                    position: relative;
+                    color: white;
+                    font-size: 40px;
+                    height: 60px;
+                    width: 400px;
+                    top: -35px;
+                    text-align: center;
+               }
+               .cn2 {
+                    position: relative;
+                    height: 250px;
+                    width: 480px;
+                    gap: 5px;
+                    top: 730px;
+                    border-bottom: 10px solid rgba(185, 50, 99, 0.578);
+               }
+               .img2 {
+                    height:250px;
+                    width: 480px;
+               }
+               .cn3 {
+                    position: relative;
+                    height: 700px;
+                    width: 425px;
+                    gap: 5px;
+                    background-color: rgba(247, 135, 30, 0.833);
+                    left: 525px;
+                    top: 490px
+               }
+               .kp {
+                    position: absolute;
+                    color: rgb(178, 48, 48);
+                    font-weight: 800;
+                    font-size: 30px;
+                    top: -12px;
+               }
+               .cn4 {
+                    position: relative;
+                    top: 20px;
+                    height: 450px;
+                    width: 480px;
+                    text-align: center;
+               }
+               .h2 {
+                    position: absolute;
+                    font-size: 35px;
+               }
+               .img3 {
+                    position: absolute;
+                    top: 130px;
+                    right: 10px;
+                    height:275px;
+                    width: 150px;
+                    border-bottom: 20px solid rgba(185, 50, 99, 0.578) ;
+
+               }
+               .cn41 {
+                    position: absolute;
+                    top: 110px;
+                    height: 300px;
+                    width: 310px;
+                    font-size: 21.5px;
+               }
+               #A::first-letter { 
+                    font-size: 50px; 
+                    color: rgb(185, 50, 99);
+                    float: left;
+               }
+               .fborder {
+                    position: relative;
+                    top: 40px;
+                    left: -50px;
+                    height: 10px;
+                    width: 1000px;
+                    display: grid;
+                    grid-template-columns: 575px 435px;
+               }
+               .lfb {
+                    background-color: rgb(185, 50, 99);
+               }
+               .rfb {
+                    background-color: white;
+               }
+               .footer {
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: 575px 435px;
+                    top: 40px;
+                    right: 50px;
+                    height: 44px;
+                    width: 1000px;
+               }
+               .lf {
+                    background-color: white;
+               }
+               .rf {
+                    background-color: rgb(185, 50, 99);
+               }
+          </style>
+     </head>
+     <body>
+          <div class="body">
+               <div class="NP">
+                    <div class="index">
+                         <ul>
+                              <li class="topic">Current Affair</li>
+                              <li class="day">Saturday</li>
+                              <li class="date">July 15th</li>
+                         </ul>
+                    </div>
+                    <div class="header">
+                         <div class="hleft">
+                              <div class="hleftc">NEWS</div>
+                         </div>
+                         <div class="hcenter">
+                              <div class="hcenterc">LETTER</div>
+                         </div>
+                         <div class="hright">
+                              <div class="hrightc">CNN India launches historic Chandrayaan-3 mission to land spacecraft on the moon 11 hours ago.</div>
+                         </div>
+                         <div class="h">
+                              <div class="slogan"> “All the News That's Fit to Print,”</div>
+                         </div>
+                         <div class="content1">
+                              <div class="cn1">
+                                   <h1 class="title1">Capital concerns: What India’s handmade sector needs for growth</h1>
+                                   <p class="t1p1">The creative manufacturing and handmade (CMH) sector the world over has been on the upswing. Valued at USD 700 billion in 2022, it is expected to vault to USD 1 trillion by 2024. </p>
+                                   <p class="t1p2">A new combination of market forces drives its upward arc, guided by conscious consumerism—a predilection for products and processes that are environmentally sustainable, socially inclusive, equitable, regional, and invariably artisanal. These imperatives meet Sustainable Development Goal (SDG) 12: responsible consumption and production. </p>
+                                   <p class="t1p3">India’s own handmade sector has been growing at a parallel pace. Its exports in FY 2021–22 totalled USD 4.35 billion, a 25.7 percent step up from the year before. In addition to forex, a substantial part of the sector’s revenue is generated domestically.In FY 2020–21, the Indian government pegged the handicraft and handloom sector at INR 25,706.3 crore (approximately USD 3 billion).Of late, demand has received further fillip from retail conglomerates that have scaled up their social and artisanal business partnerships.</p>
+                              </div>
+                              <div class="cn11">
+                                   <image class="pic1" src="https://idronline.org/wp-content/uploads/2023/07/pexels-ravi-roshan-5476028.jpg.webp"></image>
+                                   <div class="border1"></div>
+                                   <div class="border2">
+                                        <p class="bc1">Today's Headlines:</p>
+                                   </div>
+                              </div>
+                         </div>
+                         </div>
+                              <div class="cn2"> 
+                                   <img class="img2" src="https://www.imarcgroup.com/CKEditor/f7c14db6-c217-4d9a-8867-a9996360d6f3global-handicrafts-market-report.webp"></img>
+
+                              </div>
+                              <div class="cn3">
+                                   <ul class="kp" type="disk">
+                                        <li>Trash-based economy needed for rural uplift</li>
+                                        <hr/>
+                                        <li>Project for children’s rights started</li>
+                                        <hr/>
+                                        <li>‘BJP will have 90% strike rate in 2024 polls with 152 seats’</li>
+                                        <hr/>
+                                        <li>Swashbuckling Jitesh in Asian Games team, Gaikwad to lead</li>
+                                        <hr/>
+                                        <li>3 sentenced to life in double murder case, minor too convicted</li>
+                                        <hr/>
+                                        <li>Cops file FIR against man for stalking green activist</li>
+                                   </ul>
+                              </div>
+                              <div class="cn4">
+                                   <h1 class="h2">2024 LS polls won’t impact growth: Study<hr/></h1>
+                                   <div>
+                                        <img class="img3" src="https://www.applauz.me/hubfs/blog_help-center_when-you-should-use-company-polls-on-applauz-fimage-1.jpg"></img>
+                                   </div>
+                                   <div>
+                                        <p class="cn41" id="A">A new study has suggested that the 2024 Lok Sabha elections will not have a significant impact on India's economic growth. The study was conducted by an independent research firm and shows that the elections in 2024 will not have a significant effect on the economy. The study concluded that the effects of elections on economic growth are generally short-term and that the economy usually returns to its pre-election level once the election is over.</p>
+                                   </div>
+                              </div>
+                              <div class="fborder">
+                                   <div class="lfb"></div>
+                                   <div class="rfb"></div>
+                              </div>
+                              <div class="footer">
+                                   <div class="lf"></div>
+                                   <div class="rf"></div>
+                              </div>
+                    </div>
+               </div>
+          </div>
+     </body>
+     </html>
