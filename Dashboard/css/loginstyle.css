@@ -1,0 +1,46 @@
+body{
+    background-image:linear-gradient(#8e61c3,#ddd0ed);
+}
+
+.con{
+    padding:0%;
+    margin:4% auto;
+    height:500px;
+    width:80%;
+    background-color: pink;
+    box-shadow: 5px 4px 8px 2px #d2c0e7;
+    border-radius:6%;
+}
+
+.left{
+    border-radius:4% 0% 0% 4%;
+    height: 500px;
+    width: 50%;
+    background-image:url("../images/log.jpg");
+    background-size:cover;
+    float:left;
+}
+.right{
+    border-radius:0% 4% 4% 0%;
+    height: 500px;
+    width: 50%;
+    background-color:#8e61c3;
+    float:left;
+}
+.login-box{
+    margin: 10% 0;
+}
+.login{
+    width:80%;
+    margin:5% 10%;
+    /* margin:auto; 
+    border:1px solid; */
+}
+.form-control{
+    height:40px;
+    width:80%;
+    margin-top:4%;
+    background-color:#ddd0ed;
+    border: none;
+    border-radius: 10px;
+}
